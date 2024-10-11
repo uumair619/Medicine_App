@@ -8,7 +8,7 @@ import kotlinx.android.parcel.Parcelize
 data class MedicineResponse (
 
     @SerializedName("name"        ) var name        : String?                = null,
-    @SerializedName("medications" ) var medications : ArrayList<Medications> = arrayListOf(),
+    @SerializedName("medications" ) var medications : ArrayList<AssociatedDrug> = arrayListOf(),
     @SerializedName("labs"        ) var labs        : ArrayList<Labs>        = arrayListOf()
 
 ) : Parcelable
@@ -19,27 +19,6 @@ data class Labs (
     @SerializedName("name"   ) var name   : String? = null,
     @SerializedName("image"  ) var image  : String? = null,
     @SerializedName("detail" ) var detail : String? = null
-
-) : Parcelable
-
-@Parcelize
-data class Medications (
-
-    @SerializedName("medicationsClasses" ) var medicationsClasses : ArrayList<MedicationsClasses> = arrayListOf()
-
-) : Parcelable
-
-@Parcelize
-data class MedicationsClasses (
-
-    @SerializedName("med" ) var med : ArrayList<Med> = arrayListOf()
-
-) : Parcelable
-
-@Parcelize
-data class Med (
-
-    @SerializedName("associatedDrug" ) var associatedDrug : ArrayList<AssociatedDrug> = arrayListOf()
 
 ) : Parcelable
 

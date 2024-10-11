@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.benchmark.common)
+    implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -88,6 +89,9 @@ dependencies {
     //Snackbar
     implementation(libs.accompanist.insets)
     implementation(libs.material)
+    //shimmer
+    implementation(libs.shimmer)
+    implementation(libs.coil)
 
 
 

@@ -7,6 +7,6 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("73afc239-e1cc-4d14-b7b0-5c9460b29e73")
+    @GET("74790fde-8fdb-40bf-8ea6-02cb29bd4969")
     suspend fun getData(): Response<BaseResponseModel<List<MedicineResponse>>>
 }
